@@ -1,0 +1,138 @@
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+.panel {
+  font-family: 'Source Sans Pro';
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 10;
+  width: 500px;
+  height: 415px;
+  /*background: lightgrey;*/
+  background: transparent;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -249px;
+  padding: 20px;
+  /*border-radius: 4px;*/
+  /*box-sizing: border-box;*/
+  z-index: 100;
+}
+
+
+/* ---- base ---- */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  /*background: #111;*/
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles {
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+
+/* code for animated blinking cursor */
+
+.typed-cursor {
+  opacity: 1;
+  font-weight: 100;
+  color: white;
+  font-size: x-large;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

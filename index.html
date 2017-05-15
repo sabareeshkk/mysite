@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sabareeshk</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" media="screen" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/hover-min.css">
+    <link rel="stylesheet" href="bower_components/ihover/src/ihover.min.css">
+</head>
+
+<body>
+    <div id="particles">
+    </div>
+    <div class="panel" style="display: block;">
+        
+        <div class="row">
+            <div class="col-sm-6 col-md-offset-3">
+
+                <!-- normal -->
+                <div class="ih-item circle effect2 left_to_right">
+                    <a href="#">
+                        <div class="img"><img src="assets/profile_img.png" alt="img" class="img-circle center-block" style="width: 220px; height: auto;"></div>
+                        <div class="info">
+                            <h3>Sabareesh k</h3>
+                            <p>Born: 1991 june 5</p>
+                            <p>Mob: +91-9645662913</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end normal -->
+
+            </div>
+        </div>
+
+            <!--<img src="assets/sabri.jpeg" alt="profile" class="img-circle hvr-grow center-block" style="width: 200px; height: 202px; margin-left: 110px;">-->
+            <div class="type-wrap text-center">
+                <div id="typed-strings">
+                    <span>Learning <strong>JavaScript</strong>.</span>
+                    <p>Love <strong>New</strong> Technologies</p>
+                    <p>And ...........Whoops!</p>
+                    <p>I am a</p>
+                    <p>Web Developer.</p>
+                </div>
+                <span id="typed" style="white-space:pre;font-size: 30px; color: white; line-height: 82px;" class="text-center"></span>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a href="https://github.com/sabareeshkk" class="hvr-float-shadow" style="color: #10314e" target="_blank">
+                        <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/in/sabareesh-k-483845a9/" class="hvr-float-shadow" style="color: #10314e" target="_blank">
+                        <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="resume/resume.pdf" class="hvr-float-shadow" style="color: #10314e" download>
+                        <i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script type="text/javascript" src="pace.min.js"></script>
+        <script type="text/javascript" src="assets/particles.min.js"></script>
+        <script type="text/javascript" src="assets/typed.min.js"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>-->
+        <script type="text/javascript">
+            /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+            particlesJS.load('particles', 'assets/particles.json', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                Typed.new("#typed", {
+                    stringsElement: document.getElementById('typed-strings'),
+                    typeSpeed: 30,
+                    backDelay: 500,
+                    loop: false,
+                    contentType: 'html', // or text
+                    // defaults to null for infinite loop
+                    loopCount: null,
+                    callback: function () { foo(); },
+                    resetCallback: function () { newTyped(); }
+                });
+
+            });
+
+            function newTyped() { /* A new typed object */ }
+
+            function foo() {
+                console.log("Callback");
+            }
+        </script>
+</body>
+
+</html>
